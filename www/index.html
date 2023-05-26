@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/logo.png" />
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/button.css">
+        <title>Aide Mémoire</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    </head>
+    <body> 
+
+        <img id="logo" src="img/logo.png"/> 
+        <h1>Interface de configuration</h1>
+
+        <form>
+
+            <div>
+                <input type="checkbox" id="demo4" class="togglebtn" autocomplete="off" />
+                <label for="demo4" class="togglebtn conditional"><span class="indicator"></span></label>
+                <label for="demo4" class="conditional on">Horloge Analogique</label>
+                <label for="demo4" class="conditional off">Horloge Numérique</label>
+            </div>
+
+            <div>
+                <label for="AlarmFile">Importer une Alarme</label>
+                <input type="file" name="FileImport" accept="audio/mp3" id="audioFile">
+            </div>
+
+            <div id="AlarmT">
+                <label for="AlarmSound">Volume de l'alarme</label>
+                 <div class="range-wrap">
+                    <input type="range" class="range">
+                    <output class="bubble"></output>
+                </div>
+            </div>        
+
+            <div>
+                <label for="PhotoFile">Importer des photos</label>
+                <input type="file" id="FileImport" accept="image/jpeg,image/png" multiple>
+                <button id="importButton" onclick="saveImageToDirectory()">Importer</button>
+            </div>
+
+            <div class="container">
+                <div class="image-wrapper">
+                    <div class="image-label">Interface 1</div>
+                    <img id="image1" src="img/page1.png">                    
+                </div>
+                
+                <div class="image-wrapper">
+                    <div class="image-label">Interface 2</div>
+                    <img id="image2" src="img/dev.png">                    
+                </div>
+
+                <div class="image-wrapper">
+                    <div class="image-label">Interface 3</div>
+                    <img id="image3" src="img/dev.png">
+                </div>
+            </div>
+
+            <p id="var"></p>
+            <div id="end">
+                <button id="save">Enregistrer</button>
+                <p id ="ErrorTxt"></p>
+            </div>
+        </form>
+
+        <script src="js/index.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/initialisation.js"></script>
+
+    </body>
+</html>

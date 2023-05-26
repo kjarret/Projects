@@ -1,0 +1,120 @@
+* {
+    margin:0 ;
+    padding: 0;
+}
+
+body {
+    background: #131416;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 600px;
+}
+
+.clock {
+    background: white;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.wrap {
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+.num {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    color: black;
+}
+
+.num12 {transform: rotate(90deg)  translateX(-150px) rotate(-0.25turn);}
+
+.num11 {transform: rotate(60deg) translateX(-150px) rotate(0.833turn);}
+
+.num10 {transform: rotate(30deg) translateX(-150px) rotate(-0.084turn);}
+
+.num9 {transform: translateX(-150px)}
+
+.num8 {transform: rotate(-30deg) translateX(-150px) rotate(0.0833turn);}
+
+.num7 {transform: rotate(-60deg) translateX(-150px) rotate(0.166turn);}
+
+.num6 {transform: rotate(270deg) translateX(-150px) rotate(0.25turn);}
+
+.num5 {transform: rotate(240deg) translateX(-150px) rotate(0.333turn);}
+
+.num4 {transform: rotate(210deg) translateX(-150px) rotate(0.416turn);}
+
+.num3 {transform: rotate(180deg) translateX(-150px) rotate(0.5turn);}
+
+.num2 {transform: rotate(150deg) translateX(-150px) rotate(0.582turn);}
+
+.num1 {transform: rotate(120deg) translateX(-150px) rotate(-0.335turn);}
+
+.minute,  .heure {
+    position: absolute;
+    height: 100px; width: 6px;
+    background: black;
+    margin: auto;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 1;
+}
+
+.minute {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -37%;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: bottom center;
+    z-index: 2;
+
+}
+
+.seconde {
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: -26%;
+    background: red ;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    z-index: 4;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.point {
+    position: absolute;
+    margin: auto;
+    top:0 ; left: 0; bottom: 0; right: 0;
+    width: 10px; height:10px;
+    background: red;
+    border: 5px solid #1b1b1b;
+    border-radius: 50%;
+    z-index: 3;
+}

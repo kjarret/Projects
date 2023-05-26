@@ -1,0 +1,174 @@
+*{-webkit-user-select: none;
+user-select: none;}
+
+body{
+    color: white;
+    height: auto;
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+/*         IMG BACKGROUND            */
+#background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+/*      REGLAGE BUTTON          */
+#reglage {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 7px;
+    left: 93.5%;
+}
+
+a img {
+    position: absolute;
+    top: 0px;
+    width: 36px;
+    height: 36px;
+    border: double black;
+}
+
+
+.horloge{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.heures{
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    display: flex;
+    font-size: 160px;
+    visibility: hidden;
+    margin-left: 25px;
+}
+
+.date{
+    display: block;   
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    font-size: 55px;
+}
+
+.clock {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+/*  RAPPEL  */
+
+table {
+    position: absolute;
+    left: 60%;
+    top: 17%;
+    border: 1px solid #333;
+    width: 33%;
+    height: 350px;
+    max-height: 350px;
+    background-color: rgba(250, 186, 49, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color:#000;
+    border-bottom-right-radius: 15px;
+}
+
+#title {
+    position: relative;
+    border-bottom: solid 1px;
+    padding: 1.2em 0em 1.2em 0em;
+    font-size: 21px;
+}
+
+td {text-align: center; font-weight: 700; font-size: 30px;}
+
+#evenementsTable th,td {font-size: 25px;}
+
+tbody >tr  td {
+    border: dashed 1px black;
+}
+
+tbody > tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+/*    EPINGLE    */
+img {
+    position: absolute;
+    width: auto;
+    height: 50px;
+    top: -27%;
+    left: 45%;
+    margin: auto;
+    transform-origin: left center;
+}
+
+/*      ANNIVERSAIRE    */
+#anniversaire {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    font-size: 25px;
+    width: 33%;
+    height: 12%;
+    text-align: center;
+    border: thick double #f00000;
+    border-radius: 15px;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    background-color: rgba(0.8);
+    padding-top: 20px;
+   backdrop-filter: blur(5px);
+}
+#anniversaire p {
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/*      -----------    */
+
+/*      SLIDER PHOTO      */ 
+#slider {
+    position: absolute;
+    top: 49%;
+    margin-left: 5%;
+    border: inset 10px rgb(255, 255, 255);
+    width: 500px;
+    height: 35%;
+    z-index: 0;
+}
+
+.image {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*          END         */
+
+footer{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.saint {font-size: 35px;}
+
+#displaySaint{
+    font-style: italic; 
+    text-shadow: 0 0 3px black, 0 0 5px green;
+}
